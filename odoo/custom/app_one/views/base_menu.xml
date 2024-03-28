@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="real_state_root_menu"
+        name="Real State"
+        web_icon="app_one,static/description/icon.png"
+    />
+    <menuitem
+        id="properties_menu"
+        name="Properties"
+        parent="real_state_root_menu"
+    />
+    <menuitem
+        id="configuration_menu"
+        name="Configuration"
+        parent="real_state_root_menu"
+        sequence="10"
+    />
+
+</odoo>

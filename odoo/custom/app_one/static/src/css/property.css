@@ -1,0 +1,8 @@
+.custom-header table thead tr th {
+  background-color: #2088b1 !important;
+  color: white !important;
+  text-align: center;
+}
+.custom-header table thead tr th:nth-child(2) {
+  width: 200px !important;
+}

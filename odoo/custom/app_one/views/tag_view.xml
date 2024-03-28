@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- tree view -->
+    <record id="tag_tree_view" model="ir.ui.view">
+        <field name="name">tag tree</field>
+        <field name="model">tag</field>
+        <field name="arch" type="xml">
+            <!-- <tree multi_edit="1" create="1" edit="1" delete="1"> -->
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <!-- form view -->
+    <record id="tag_form_view" model="ir.ui.view">
+        <field name="name">tag form</field>
+        <field name="model">tag</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="tag_action" model="ir.actions.act_window">
+        <field name="name">Tag</field>
+        <field name="res_model">tag</field>
+    </record>
+
+    <menuitem
+        id="configuration_menu_item2"
+        parent="configuration_menu"
+        name="Tags"
+        action="tag_action"
+        sequence="10"
+    />
+
+
+
+</odoo>
